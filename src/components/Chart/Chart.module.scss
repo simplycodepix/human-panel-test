@@ -1,0 +1,45 @@
+$default-color: #313131;
+
+.container {
+    margin: 37px 8px;
+    display: flex;
+    align-items: center;
+
+    :global {
+        [class$="-legend"] {
+            list-style: none;
+            cursor: pointer;
+            padding-left: 0;
+            margin: 0 0 0 15px;
+        }
+
+        [class$="-legend"] li {
+            padding: 5px 0;
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            color: rgba($default-color, 0.7);
+            font-size: 14px;
+            text-align: right;
+        }
+
+        [class$="-legend"] li.hidden {
+            text-decoration: line-through;
+        }
+
+        [class$="-legend"] li span {
+            border-radius: 2px;
+            display: inline-block;
+            margin-left: 8px;
+            width: 12px;
+            height: 12px;
+        }
+    }
+}
+
+.chartContainer {
+    canvas {
+        width: 100%;
+        height: 100%;
+    }
+}

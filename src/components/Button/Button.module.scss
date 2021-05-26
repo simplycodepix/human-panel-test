@@ -1,0 +1,53 @@
+$primary-color: #382C9C;
+$default-color: #313131;
+
+.button {
+    font-family: inherit;
+    padding: 7px 12px 8px;
+    color: $primary-color;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: .3s ease-in-out;
+
+    display: inline-flex;
+    align-items: center;
+
+    &:hover {
+        background: rgba($primary-color, 0.05);
+    }
+
+    &.iconButton {
+        padding: 11px;
+        line-height: 1;
+        color: $default-color;
+        min-width: 32px;
+        min-height: 32px;
+
+        &:hover {
+            background: rgba($default-color, 0.05);
+        }
+
+        svg {
+            width: 10px;
+        }
+    }
+}
+
+.icon {
+    display: inline-flex;
+    align-items: center;
+
+    path {
+        fill: $primary-color;
+    }
+
+    &.startIcon {
+        margin-right: 12px;
+    }
+
+    &.endIcon {
+        margin-left: 12px;
+    }
+}

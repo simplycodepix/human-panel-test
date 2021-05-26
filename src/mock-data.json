@@ -1,0 +1,30 @@
+{
+  "id": 2,
+  "title": "Headcount",
+  "dataSeries": [
+    {
+      "label": "Web",
+      "count": 204
+    },
+    {
+      "label": "Quality Assurance",
+      "count": 59
+    },
+    {
+      "label": "Project management",
+      "count": 51
+    },
+    {
+      "label": "Product design",
+      "count": 80
+    },
+    {
+      "label": "Mobile",
+      "count": 60
+    },
+    {
+      "label": "Other",
+      "count": 230
+    }
+  ]
+}
